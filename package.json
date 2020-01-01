@@ -1,0 +1,29 @@
+{
+  "name": "react-cli-components",
+  "version": "0.0.1",
+  "description": "react-cli-components",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "tsc",
+    "test": "mocha --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/1512751361/react-cli-components.git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "1512751361",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/1512751361/react-cli-components/issues"
+  },
+  "homepage": "https://github.com/1512751361/react-cli-components#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "mocha": "^6.2.2",
+    "typescript": "^3.7.4"
+  }
+}
