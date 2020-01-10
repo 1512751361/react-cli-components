@@ -1,6 +1,6 @@
 {
   "name": "react-cli-components",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "react-cli-components",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,9 @@
     "build:prod": "webpack --config build/webpack.prod.js --progress --colors",
     "build:stage": "webpack --config build/webpack.stage.js --progress --colors",
     "deploy": "gh-pages -d examples/dist",
-    "publish-demo": "npm run build:prod && npm run deploy"
+    "publish-demo": "npm run build:prod && npm run deploy",
+    "registry": "npm config set registry=https://registry.npmjs.org",
+    "registry-taobao": "npm config set registry=http://registry.npm.taobao.org/"
   },
   "repository": {
     "type": "git",
