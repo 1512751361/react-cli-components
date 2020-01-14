@@ -8,7 +8,7 @@ module.exports = {
   entry: path.join(__dirname, '../example/src/app.tsx'),
   output: {
     filename: '[name].[hash:8].js',
-    path: path.resolve(__dirname, '..', '/example/dist'),
+    path: path.resolve(__dirname, '..', 'dist'),
   },
   module: {
     noParse(content) {

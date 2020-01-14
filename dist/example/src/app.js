@@ -9,4 +9,3 @@ var index_1 = require("../../lib/index");
 console.log(index_1.ReactDemo);
 var App = function () { return react_1.default.createElement(index_1.ReactDemo, null); };
 react_dom_1.render(react_1.default.createElement(App, null), document.getElementById('root'));
-//# sourceMappingURL=app.js.map

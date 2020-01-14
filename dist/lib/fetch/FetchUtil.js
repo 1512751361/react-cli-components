@@ -84,6 +84,12 @@ var FetchUtil = /** @class */ (function () {
         };
     }
     /**
+     * @description 设置config
+     */
+    FetchUtil.prototype.setConfig = function (config) {
+        this.defaults = merge_1.default(this.defaults, config);
+    };
+    /**
      * @description init config
      */
     FetchUtil.prototype.initConfig = function (config) {
@@ -112,7 +118,7 @@ var FetchUtil = /** @class */ (function () {
             }
             config2.url = url;
         }
-        return config;
+        return config2;
     };
     /**
      * @description URL参数编码
@@ -184,7 +190,7 @@ var FetchUtil = /** @class */ (function () {
             var url, _a, baseURL, body, headers, transformRequest, _b, timeout, responseType, payload;
             return __generator(this, function (_c) {
                 url = config.url, _a = config.baseURL, baseURL = _a === void 0 ? '' : _a, body = config.body, headers = config.headers, transformRequest = config.transformRequest, _b = config.timeout, timeout = _b === void 0 ? 1000 * 5 : _b, responseType = config.responseType, payload = __rest(config, ["url", "baseURL", "body", "headers", "transformRequest", "timeout", "responseType"]);
-                if (url) {
+                if (!url) {
                     throw new Error('Request URL cannot be empty');
                 }
                 return [2 /*return*/, fetch(baseURL + url, __assign(__assign({}, payload), { body: body, headers: new Headers(headers) })).then(function (response) {
@@ -219,4 +225,3 @@ var FetchUtil = /** @class */ (function () {
     return FetchUtil;
 }());
 exports.default = FetchUtil;
-//# sourceMappingURL=FetchUtil.js.map

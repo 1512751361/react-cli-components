@@ -28,6 +28,13 @@ export default class FetchUtil {
   }
 
   /**
+   * @description 设置config
+   */
+  public setConfig(config: IFetchConfig) {
+    this.defaults = merge(this.defaults, config);
+  }
+
+  /**
    * @description init config
    */
   private initConfig(config: IFetchConfig) {
@@ -56,7 +63,7 @@ export default class FetchUtil {
       }
       config2.url = url;
     }
-    return config;
+    return config2;
   }
 
   /**
@@ -136,7 +143,7 @@ export default class FetchUtil {
       responseType,
       ...payload
     } = config;
-    if (url) {
+    if (!url) {
       throw new Error('Request URL cannot be empty');
     }
     return fetch(baseURL + url, {

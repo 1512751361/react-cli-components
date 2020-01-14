@@ -15,6 +15,10 @@ export default class FetchUtil {
     };
     constructor(config: IFetchConfig);
     /**
+     * @description 设置config
+     */
+    setConfig(config: IFetchConfig): void;
+    /**
      * @description init config
      */
     private initConfig;

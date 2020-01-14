@@ -18,4 +18,3 @@ var EResponseType;
     EResponseType["text"] = "text";
     EResponseType["formData"] = "formData";
 })(EResponseType = exports.EResponseType || (exports.EResponseType = {}));
-//# sourceMappingURL=typings.js.map

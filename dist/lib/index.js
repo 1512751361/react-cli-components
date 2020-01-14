@@ -7,4 +7,7 @@ function add(a, b) {
     return a + b;
 }
 exports.add = add;
-//# sourceMappingURL=index.js.map
+var FetchUtil_1 = require("./fetch/FetchUtil");
+exports.FetchUtil = FetchUtil_1.default;
+var InterceptorManager_1 = require("./fetch/InterceptorManager");
+exports.InterceptorManager = InterceptorManager_1.default;

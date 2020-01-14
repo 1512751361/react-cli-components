@@ -1,8 +1,8 @@
 {
-  "name": "react-cli-components",
+  "name": "@lhs1512751361/react-cli-components",
   "version": "0.0.2",
   "description": "react-cli-components",
-  "main": "index.js",
+  "main": "dist/lib/index.js",
   "scripts": {
     "build": "tsc",
     "test": "mocha --reporter spec",
@@ -68,5 +68,11 @@
     "webpack-cli": "^3.3.10",
     "webpack-dev-server": "^3.10.1",
     "webpack-merge": "^4.2.2"
-  }
+  },
+  "directories": {
+    "example": "example",
+    "lib": "lib",
+    "test": "test"
+  },
+  "dependencies": {}
 }
